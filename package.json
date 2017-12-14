@@ -1,0 +1,44 @@
+{
+	"name": "huemidity",
+	"version": "1.0.0",
+	"description": "Control your Philips Hue lights with MIDI triggers",
+	"main": "./index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/rileyjshaw/huemidity.git"
+	},
+	"keywords": [
+		"MIDI",
+		"synthesizer",
+		"synesthesia",
+		"keyboard",
+		"drum pad",
+		"trigger",
+		"music",
+		"audio",
+		"colors",
+		"spectrum",
+		"hue",
+		"lights",
+		"philips hue"
+	],
+	"author": "rileyjshaw <i@rileyjshaw.com> (http://rileyjshaw.com)",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/rileyjshaw/huemidity/issues"
+	},
+	"homepage": "https://github.com/rileyjshaw/huemidity#readme",
+	"dependencies": {
+		"average-color": "^2.0.0",
+		"huejay": "^1.7.3",
+		"midi": "^0.9.5"
+	},
+	"devDependencies": {
+		"babel-core": "^6.26.0",
+		"babel-loader": "^7.1.2",
+		"babel-preset-es2015": "^6.24.1"
+	}
+}
