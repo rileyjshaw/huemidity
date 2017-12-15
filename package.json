@@ -1,10 +1,11 @@
 {
 	"name": "huemidity",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Control your Philips Hue lights with MIDI triggers",
-	"main": "./index.js",
+	"main": "./index-compiled.js",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "babel index.es6.js --out-file index-compiled.js && node index-compiled.js"
 	},
 	"repository": {
 		"type": "git",
@@ -32,13 +33,13 @@
 	},
 	"homepage": "https://github.com/rileyjshaw/huemidity#readme",
 	"dependencies": {
-		"average-color": "^2.0.0",
+		"average-color": "^2.0.2",
 		"huejay": "^1.7.3",
 		"midi": "^0.9.5"
 	},
 	"devDependencies": {
-		"babel-core": "^6.26.0",
-		"babel-loader": "^7.1.2",
+		"babel-cli": "^6.26.0",
+		"babel-plugin-transform-es2015-modules-commonjs": "^6.26.0",
 		"babel-preset-es2015": "^6.24.1"
 	}
 }

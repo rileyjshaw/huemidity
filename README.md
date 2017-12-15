@@ -19,7 +19,7 @@ touch .credentials.json  # Add hue `host` and `username` keys here.
 Plug in a MIDI instrument, then:
 
 ```bash
-babel-node index.js
+yarn start
 ```
 
 ---
